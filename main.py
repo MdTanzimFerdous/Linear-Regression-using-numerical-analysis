@@ -14,7 +14,7 @@ data_size = int(input("Enter data size: "))
 
 for i in range(0, int(data_size)):
     x = int(input("Enter pizza size(inch): "))
-    y = int(input("Enter pizza prize: "))
+    y = int(input("Enter pizza price: "))
     data_set_x.append(x)
     data_set_y.append(y)
     # For equation value
@@ -57,3 +57,10 @@ except ZeroDivisionError:
     accuracy = 0
 
 print(f"\nSo R-Squared Value or Accuracy of our model is: {accuracy}%")
+
+print("Guess a pizza price from pizza size(inch): Y/N")
+s = input()
+if s == "Y":
+    guessed_num = int(input("Enter the size of pizza(inch): "))
+    res = m * x + c
+    print(f"Price of the pizza will be: {res}")
