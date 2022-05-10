@@ -62,5 +62,5 @@ print("Guess a pizza price from pizza size(inch): Y/N")
 s = input()
 if s == "Y":
     guessed_num = int(input("Enter the size of pizza(inch): "))
-    res = m * x + c
+    res = m * guessed_num + c
     print(f"Price of the pizza will be: {res}")
